@@ -39,6 +39,6 @@ python main.py
 
 ## Notes
 
-- The program is built with Python and Tkinter only.
+- The program is built with Python and Tkinter.
 - Wednesday afternoon blocks are marked as `iffy`.
 - Evening blocks are included only when the instructor enables them.
