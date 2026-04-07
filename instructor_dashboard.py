@@ -32,19 +32,24 @@ class InstructorDashboardWindow(tk.Toplevel):
         body = tk.Frame(self, padx=12, pady=12)
         body.pack(fill="both", expand=True)
 
-        columns = ("block", "conflicts", "available", "priority", "types")
+        columns = ("block", "conflicts", "available", "status", "priority", "types")
         self.tree = ttk.Treeview(body, columns=columns, show="headings")
         self.tree.heading("block", text="Block")
         self.tree.heading("conflicts", text="Conflicts")
         self.tree.heading("available", text="Available")
+        self.tree.heading("status", text="Status")
         self.tree.heading("priority", text="Priority")
         self.tree.heading("types", text="Conflict Types")
-        self.tree.column("block", width=280)
+        self.tree.column("block", width=260)
         self.tree.column("conflicts", width=80, anchor="center")
         self.tree.column("available", width=80, anchor="center")
+        self.tree.column("status", width=100, anchor="center")
         self.tree.column("priority", width=100, anchor="center")
-        self.tree.column("types", width=260)
+        self.tree.column("types", width=240)
         self.tree.pack(side="left", fill="both", expand=True)
+        self.tree.tag_configure("open", background="#d4f5d4")
+        self.tree.tag_configure("partial", background="#fff2cc")
+        self.tree.tag_configure("closed", background="#f8d7da")
         self.tree.bind("<<TreeviewSelect>>", self.show_details)
 
         scrollbar = tk.Scrollbar(body, command=self.tree.yview)
@@ -75,10 +80,13 @@ class InstructorDashboardWindow(tk.Toplevel):
         self.tree.delete(*self.tree.get_children())
         for result in self.results:
             type_summary = ", ".join(f"{k}: {v}" for k, v in result["conflict_types"].items()) or "None"
+            status = "Open" if result["conflict_count"] == 0 else "Partial" if result["available_count"] > 0 else "Closed"
+            tag = "open" if status == "Open" else "partial" if status == "Partial" else "closed"
             self.tree.insert(
                 "",
                 "end",
-                values=(result["label"], result["conflict_count"], result["available_count"], result["priority"], type_summary),
+                values=(result["label"], result["conflict_count"], result["available_count"], status, result["priority"], type_summary),
+                tags=(tag,),
             )
         self.details_text.delete("1.0", "end")
         self.details_text.insert("end", f"Loaded {len(students)} student submission(s).\n\nSelect a block to view details.")
@@ -93,6 +101,8 @@ class InstructorDashboardWindow(tk.Toplevel):
         self.details_text.insert("end", f"{result['label']}\n")
         self.details_text.insert("end", f"Conflicts: {result['conflict_count']}\n")
         self.details_text.insert("end", f"Available: {result['available_count']}\n")
+        status = "Open" if result["conflict_count"] == 0 else "Partial" if result["available_count"] > 0 else "Closed"
+        self.details_text.insert("end", f"Status: {status}\n")
         self.details_text.insert("end", f"Priority: {result['priority']}\n\n")
         if not result["conflicts"]:
             self.details_text.insert("end", "No conflicts for this block.")

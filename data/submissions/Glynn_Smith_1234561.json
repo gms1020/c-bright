@@ -1,0 +1,35 @@
+{
+  "name": "Glynn Smith",
+  "student_id": "1234561",
+  "email": "gsmith014@g,rwu.edu",
+  "interested": true,
+  "evening_ok": true,
+  "athlete": false,
+  "conflicts": [
+    {
+      "block_code": "M2",
+      "conflict_type": "Spring Sport",
+      "label": "Club"
+    },
+    {
+      "block_code": "M6",
+      "conflict_type": "Class",
+      "label": "Sociology"
+    },
+    {
+      "block_code": "T21",
+      "conflict_type": "Class",
+      "label": "World History"
+    },
+    {
+      "block_code": "F1",
+      "conflict_type": "Class",
+      "label": "Printmaking"
+    },
+    {
+      "block_code": "W5",
+      "conflict_type": "Extracurricular",
+      "label": "Self Defense"
+    }
+  ]
+}

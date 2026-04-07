@@ -52,8 +52,9 @@ class StudentFormWindow(tk.Toplevel):
         type_combo = ttk.Combobox(conflict_frame, textvariable=self.conflict_type_var, values=CONFLICT_TYPES, width=18, state="readonly")
         type_combo.grid(row=0, column=3, sticky="w", padx=4)
 
-        tk.Label(conflict_frame, text="Label").grid(row=1, column=0, sticky="w")
+        tk.Label(conflict_frame, text="Activity Name").grid(row=1, column=0, sticky="w")
         tk.Entry(conflict_frame, textvariable=self.label_var, width=42).grid(row=1, column=1, sticky="w", padx=4)
+
         tk.Button(conflict_frame, text="Add Conflict", command=self.add_conflict).grid(row=1, column=3, sticky="e")
 
         list_frame = tk.LabelFrame(self, text="Current conflicts", padx=12, pady=12)
@@ -78,7 +79,7 @@ class StudentFormWindow(tk.Toplevel):
         block_code = block_display.split(" - ")[0]
         label = self.label_var.get().strip()
         if not label:
-            messagebox.showerror("Missing label", "Please enter a course, sport, or activity label.")
+            messagebox.showerror("Missing activity name", "Please enter the activity name.")
             return
         conflict = Conflict(
             block_code=block_code,

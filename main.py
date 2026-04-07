@@ -18,7 +18,7 @@ class LauncherApp(tk.Tk):
 
         tk.Label(
             frame,
-            text="COMSC 330 Course Scheduling Analyzer",
+            text="Course Scheduling Analyzer",
             font=("Arial", 14, "bold"),
         ).pack(pady=(0, 10))
 
@@ -28,7 +28,7 @@ class LauncherApp(tk.Tk):
         ).pack(pady=(0, 18))
 
         tk.Button(frame, text="Student Mode", width=24, command=self.open_student).pack(pady=6)
-        tk.Button(frame, text="Instructor Mode", width=24, command=self.open_instructor).pack(pady=6)
+        tk.Button(frame, text="Instructor Mode", width=24, command=self.open_instructor ).pack(pady=6)
         tk.Button(frame, text="Exit", width=24, command=self.destroy).pack(pady=6)
 
     def open_student(self):
