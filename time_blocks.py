@@ -42,9 +42,9 @@ BLOCKS: List[TimeBlock] = [
     TimeBlock("W4", "Wednesday", "11:00", "11:50", 4, "Wednesday 11:00-11:50"),
     TimeBlock("W5", "Wednesday", "12:00", "12:50", 5, "Wednesday 12:00-12:50"),
     TimeBlock("W6", "Wednesday", "13:00", "13:50", 6, "Wednesday 1:00-1:50"),
-    TimeBlock("W7", "Wednesday", "14:00", "15:20", 7, "Wednesday 2:00-3:20", priority="iffy"),
-    TimeBlock("W8", "Wednesday", "15:30", "16:50", 8, "Wednesday 3:30-4:50", priority="iffy"),
-    TimeBlock("W9", "Wednesday", "17:00", "18:20", 9, "Wednesday 5:00-6:20", priority="iffy"),
+    TimeBlock("W7", "Wednesday", "14:00", "15:20", 7, "Wednesday 2:00-3:20"),
+    TimeBlock("W8", "Wednesday", "15:30", "16:50", 8, "Wednesday 3:30-4:50"),
+    TimeBlock("W9", "Wednesday", "17:00", "18:20", 9, "Wednesday 5:00-6:20"),
 
     TimeBlock("R21", "Thursday", "08:00", "09:20", 21, "Thursday 8:00-9:20"),
     TimeBlock("R22", "Thursday", "09:30", "10:50", 22, "Thursday 9:30-10:50"),

@@ -16,14 +16,14 @@ for folder in (DATA_DIR, SUBMISSIONS_DIR, EXPORTS_DIR):
     folder.mkdir(parents=True, exist_ok=True)
 
 
-def sanitize_filename(value: str) -> str:
+def clean_filename(value: str) -> str:
     cleaned = "".join(char if char.isalnum() or char in ("-", "_") else "_" for char in value.strip())
     return cleaned.strip("_") or "student"
 
 
 def save_student_response(student: StudentResponse, folder: Path = SUBMISSIONS_DIR) -> Path:
     folder.mkdir(parents=True, exist_ok=True)
-    filename = f"{sanitize_filename(student.name)}_{sanitize_filename(student.student_id or 'id')}.json"
+    filename = f"{clean_filename(student.name)}_{clean_filename(student.student_id or 'id')}.json"
     path = folder / filename
     with path.open("w", encoding="utf-8") as handle:
         json.dump(student.to_dict(), handle, indent=2)
