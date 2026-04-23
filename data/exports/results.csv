@@ -1,0 +1,46 @@
+Block Code,Label,Conflicts,Available,Priority,Evening,Conflict Types
+F3,Friday 10:00-10:50,0,3,preferred,False,
+F5,Friday 12:00-12:50,0,3,preferred,False,
+F6,Friday 1:00-1:50,0,3,preferred,False,
+F25,Friday 2:00-3:20,0,3,preferred,False,
+F26,Friday 3:30-4:50,0,3,preferred,False,
+F27,Friday 5:00-6:20,0,3,preferred,False,
+F2,Friday 9:00-9:50,0,3,preferred,False,
+M4,Monday 11:00-11:50,0,3,preferred,False,
+M8,Monday 3:30-4:50,0,3,preferred,False,
+M9,Monday 5:00-6:20,0,3,preferred,False,
+M1,Monday 8:00-8:50,0,3,preferred,False,
+R23,Thursday 11:00-12:20,0,3,preferred,False,
+R24,Thursday 12:30-1:50,0,3,preferred,False,
+R25,Thursday 2:00-3:20,0,3,preferred,False,
+R27,Thursday 5:00-6:20,0,3,preferred,False,
+R21,Thursday 8:00-9:20,0,3,preferred,False,
+R22,Thursday 9:30-10:50,0,3,preferred,False,
+T23,Tuesday 11:00-12:20,0,3,preferred,False,
+T24,Tuesday 12:30-1:50,0,3,preferred,False,
+T25,Tuesday 2:00-3:20,0,3,preferred,False,
+T26,Tuesday 3:30-4:50,0,3,preferred,False,
+T27,Tuesday 5:00-6:20,0,3,preferred,False,
+T22,Tuesday 9:30-10:50,0,3,preferred,False,
+W3,Wednesday 10:00-10:50,0,3,preferred,False,
+W4,Wednesday 11:00-11:50,0,3,preferred,False,
+W6,Wednesday 1:00-1:50,0,3,preferred,False,
+W1,Wednesday 8:00-8:50,0,3,preferred,False,
+W2,Wednesday 9:00-9:50,0,3,preferred,False,
+W7,Wednesday 2:00-3:20,0,3,iffy,False,
+W8,Wednesday 3:30-4:50,0,3,iffy,False,
+W9,Wednesday 5:00-6:20,0,3,iffy,False,
+E12,Monday 6:30-9:30,0,3,optional,True,
+E15,Thursday 6:30-9:30,0,3,optional,True,
+E13,Tuesday 6:30-9:30,0,3,optional,True,
+E14,Wednesday 6:30-9:30,0,3,optional,True,
+F4,Friday 11:00-11:50,1,2,preferred,False,Class: 1
+F1,Friday 8:00-8:50,1,2,preferred,False,Class: 1
+M3,Monday 10:00-10:50,1,2,preferred,False,Class: 1
+M5,Monday 12:00-12:50,1,2,preferred,False,Class: 1
+M7,Monday 2:00-3:20,1,2,preferred,False,Extracurricular: 1
+M2,Monday 9:00-9:50,1,2,preferred,False,Spring Sport: 1
+R26,Thursday 3:30-4:50,1,2,preferred,False,Class: 1
+T21,Tuesday 8:00-9:20,1,2,preferred,False,Class: 1
+W5,Wednesday 12:00-12:50,1,2,preferred,False,Extracurricular: 1
+M6,Monday 1:00-1:50,2,1,preferred,False,Other: 1; Class: 1

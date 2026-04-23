@@ -1,0 +1,75 @@
+{
+  "name": "Gerald Glynn",
+  "student_id": "3456781",
+  "email": "gglynn@g.rwu.edu",
+  "interested": true,
+  "evening_ok": false,
+  "athlete": false,
+  "conflicts": [
+    {
+      "block_code": "M3",
+      "conflict_type": "Class",
+      "label": "ANSOC.100"
+    },
+    {
+      "block_code": "W3",
+      "conflict_type": "Class",
+      "label": "ANSOC.100"
+    },
+    {
+      "block_code": "F3",
+      "conflict_type": "Class",
+      "label": "ANSOC.100"
+    },
+    {
+      "block_code": "M6",
+      "conflict_type": "Class",
+      "label": "COMSC.111"
+    },
+    {
+      "block_code": "W6",
+      "conflict_type": "Class",
+      "label": "COMSC.111"
+    },
+    {
+      "block_code": "F6",
+      "conflict_type": "Class",
+      "label": "COMSC.111"
+    },
+    {
+      "block_code": "T21",
+      "conflict_type": "Class",
+      "label": "DSGN.200"
+    },
+    {
+      "block_code": "R21",
+      "conflict_type": "Class",
+      "label": "DSGN.200"
+    },
+    {
+      "block_code": "T22",
+      "conflict_type": "Class",
+      "label": "COMM.210"
+    },
+    {
+      "block_code": "R22",
+      "conflict_type": "Class",
+      "label": "COMM.210"
+    },
+    {
+      "block_code": "T24",
+      "conflict_type": "Class",
+      "label": "WTNG.225"
+    },
+    {
+      "block_code": "R24",
+      "conflict_type": "Class",
+      "label": "WTNG.225"
+    },
+    {
+      "block_code": "T25",
+      "conflict_type": "Class",
+      "label": "COMSC.111"
+    }
+  ]
+}

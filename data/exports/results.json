@@ -1,0 +1,684 @@
+[
+  {
+    "block_code": "F3",
+    "label": "Friday 10:00-10:50",
+    "day": "Friday",
+    "start": "10:00",
+    "end": "10:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "F5",
+    "label": "Friday 12:00-12:50",
+    "day": "Friday",
+    "start": "12:00",
+    "end": "12:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "F6",
+    "label": "Friday 1:00-1:50",
+    "day": "Friday",
+    "start": "13:00",
+    "end": "13:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "F25",
+    "label": "Friday 2:00-3:20",
+    "day": "Friday",
+    "start": "14:00",
+    "end": "15:20",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "F26",
+    "label": "Friday 3:30-4:50",
+    "day": "Friday",
+    "start": "15:30",
+    "end": "16:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "F27",
+    "label": "Friday 5:00-6:20",
+    "day": "Friday",
+    "start": "17:00",
+    "end": "18:20",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "F2",
+    "label": "Friday 9:00-9:50",
+    "day": "Friday",
+    "start": "09:00",
+    "end": "09:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "M4",
+    "label": "Monday 11:00-11:50",
+    "day": "Monday",
+    "start": "11:00",
+    "end": "11:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "M8",
+    "label": "Monday 3:30-4:50",
+    "day": "Monday",
+    "start": "15:30",
+    "end": "16:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "M9",
+    "label": "Monday 5:00-6:20",
+    "day": "Monday",
+    "start": "17:00",
+    "end": "18:20",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "M1",
+    "label": "Monday 8:00-8:50",
+    "day": "Monday",
+    "start": "08:00",
+    "end": "08:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "R23",
+    "label": "Thursday 11:00-12:20",
+    "day": "Thursday",
+    "start": "11:00",
+    "end": "12:20",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "R24",
+    "label": "Thursday 12:30-1:50",
+    "day": "Thursday",
+    "start": "12:30",
+    "end": "13:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "R25",
+    "label": "Thursday 2:00-3:20",
+    "day": "Thursday",
+    "start": "14:00",
+    "end": "15:20",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "R27",
+    "label": "Thursday 5:00-6:20",
+    "day": "Thursday",
+    "start": "17:00",
+    "end": "18:20",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "R21",
+    "label": "Thursday 8:00-9:20",
+    "day": "Thursday",
+    "start": "08:00",
+    "end": "09:20",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "R22",
+    "label": "Thursday 9:30-10:50",
+    "day": "Thursday",
+    "start": "09:30",
+    "end": "10:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "T23",
+    "label": "Tuesday 11:00-12:20",
+    "day": "Tuesday",
+    "start": "11:00",
+    "end": "12:20",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "T24",
+    "label": "Tuesday 12:30-1:50",
+    "day": "Tuesday",
+    "start": "12:30",
+    "end": "13:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "T25",
+    "label": "Tuesday 2:00-3:20",
+    "day": "Tuesday",
+    "start": "14:00",
+    "end": "15:20",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "T26",
+    "label": "Tuesday 3:30-4:50",
+    "day": "Tuesday",
+    "start": "15:30",
+    "end": "16:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "T27",
+    "label": "Tuesday 5:00-6:20",
+    "day": "Tuesday",
+    "start": "17:00",
+    "end": "18:20",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "T22",
+    "label": "Tuesday 9:30-10:50",
+    "day": "Tuesday",
+    "start": "09:30",
+    "end": "10:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "W3",
+    "label": "Wednesday 10:00-10:50",
+    "day": "Wednesday",
+    "start": "10:00",
+    "end": "10:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "W4",
+    "label": "Wednesday 11:00-11:50",
+    "day": "Wednesday",
+    "start": "11:00",
+    "end": "11:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "W6",
+    "label": "Wednesday 1:00-1:50",
+    "day": "Wednesday",
+    "start": "13:00",
+    "end": "13:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "W1",
+    "label": "Wednesday 8:00-8:50",
+    "day": "Wednesday",
+    "start": "08:00",
+    "end": "08:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "W2",
+    "label": "Wednesday 9:00-9:50",
+    "day": "Wednesday",
+    "start": "09:00",
+    "end": "09:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "W7",
+    "label": "Wednesday 2:00-3:20",
+    "day": "Wednesday",
+    "start": "14:00",
+    "end": "15:20",
+    "priority": "iffy",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "W8",
+    "label": "Wednesday 3:30-4:50",
+    "day": "Wednesday",
+    "start": "15:30",
+    "end": "16:50",
+    "priority": "iffy",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "W9",
+    "label": "Wednesday 5:00-6:20",
+    "day": "Wednesday",
+    "start": "17:00",
+    "end": "18:20",
+    "priority": "iffy",
+    "is_evening": false,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "E12",
+    "label": "Monday 6:30-9:30",
+    "day": "Monday",
+    "start": "18:30",
+    "end": "21:30",
+    "priority": "optional",
+    "is_evening": true,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "E15",
+    "label": "Thursday 6:30-9:30",
+    "day": "Thursday",
+    "start": "18:30",
+    "end": "21:30",
+    "priority": "optional",
+    "is_evening": true,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "E13",
+    "label": "Tuesday 6:30-9:30",
+    "day": "Tuesday",
+    "start": "18:30",
+    "end": "21:30",
+    "priority": "optional",
+    "is_evening": true,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "E14",
+    "label": "Wednesday 6:30-9:30",
+    "day": "Wednesday",
+    "start": "18:30",
+    "end": "21:30",
+    "priority": "optional",
+    "is_evening": true,
+    "conflict_count": 0,
+    "available_count": 3,
+    "conflict_types": {},
+    "conflicts": []
+  },
+  {
+    "block_code": "F4",
+    "label": "Friday 11:00-11:50",
+    "day": "Friday",
+    "start": "11:00",
+    "end": "11:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 1,
+    "available_count": 2,
+    "conflict_types": {
+      "Class": 1
+    },
+    "conflicts": [
+      {
+        "student": "Gertrude Gunderson",
+        "student_id": "2034951",
+        "conflict_type": "Class",
+        "label": "Publication"
+      }
+    ]
+  },
+  {
+    "block_code": "F1",
+    "label": "Friday 8:00-8:50",
+    "day": "Friday",
+    "start": "08:00",
+    "end": "08:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 1,
+    "available_count": 2,
+    "conflict_types": {
+      "Class": 1
+    },
+    "conflicts": [
+      {
+        "student": "Glynn Smith",
+        "student_id": "1234561",
+        "conflict_type": "Class",
+        "label": "Printmaking"
+      }
+    ]
+  },
+  {
+    "block_code": "M3",
+    "label": "Monday 10:00-10:50",
+    "day": "Monday",
+    "start": "10:00",
+    "end": "10:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 1,
+    "available_count": 2,
+    "conflict_types": {
+      "Class": 1
+    },
+    "conflicts": [
+      {
+        "student": "Gertrude Gunderson",
+        "student_id": "2034951",
+        "conflict_type": "Class",
+        "label": "Finance"
+      }
+    ]
+  },
+  {
+    "block_code": "M5",
+    "label": "Monday 12:00-12:50",
+    "day": "Monday",
+    "start": "12:00",
+    "end": "12:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 1,
+    "available_count": 2,
+    "conflict_types": {
+      "Class": 1
+    },
+    "conflicts": [
+      {
+        "student": "Gertrude Gunderson",
+        "student_id": "2034951",
+        "conflict_type": "Class",
+        "label": "NSAC"
+      }
+    ]
+  },
+  {
+    "block_code": "M7",
+    "label": "Monday 2:00-3:20",
+    "day": "Monday",
+    "start": "14:00",
+    "end": "15:20",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 1,
+    "available_count": 2,
+    "conflict_types": {
+      "Extracurricular": 1
+    },
+    "conflicts": [
+      {
+        "student": "Gertrude Gunderson",
+        "student_id": "2034951",
+        "conflict_type": "Extracurricular",
+        "label": "Robotics Club"
+      }
+    ]
+  },
+  {
+    "block_code": "M2",
+    "label": "Monday 9:00-9:50",
+    "day": "Monday",
+    "start": "09:00",
+    "end": "09:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 1,
+    "available_count": 2,
+    "conflict_types": {
+      "Spring Sport": 1
+    },
+    "conflicts": [
+      {
+        "student": "Glynn Smith",
+        "student_id": "1234561",
+        "conflict_type": "Spring Sport",
+        "label": "Club"
+      }
+    ]
+  },
+  {
+    "block_code": "R26",
+    "label": "Thursday 3:30-4:50",
+    "day": "Thursday",
+    "start": "15:30",
+    "end": "16:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 1,
+    "available_count": 2,
+    "conflict_types": {
+      "Class": 1
+    },
+    "conflicts": [
+      {
+        "student": "Gertrude Gunderson",
+        "student_id": "2034951",
+        "conflict_type": "Class",
+        "label": "Algorithms"
+      }
+    ]
+  },
+  {
+    "block_code": "T21",
+    "label": "Tuesday 8:00-9:20",
+    "day": "Tuesday",
+    "start": "08:00",
+    "end": "09:20",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 1,
+    "available_count": 2,
+    "conflict_types": {
+      "Class": 1
+    },
+    "conflicts": [
+      {
+        "student": "Glynn Smith",
+        "student_id": "1234561",
+        "conflict_type": "Class",
+        "label": "World History"
+      }
+    ]
+  },
+  {
+    "block_code": "W5",
+    "label": "Wednesday 12:00-12:50",
+    "day": "Wednesday",
+    "start": "12:00",
+    "end": "12:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 1,
+    "available_count": 2,
+    "conflict_types": {
+      "Extracurricular": 1
+    },
+    "conflicts": [
+      {
+        "student": "Glynn Smith",
+        "student_id": "1234561",
+        "conflict_type": "Extracurricular",
+        "label": "Self Defense"
+      }
+    ]
+  },
+  {
+    "block_code": "M6",
+    "label": "Monday 1:00-1:50",
+    "day": "Monday",
+    "start": "13:00",
+    "end": "13:50",
+    "priority": "preferred",
+    "is_evening": false,
+    "conflict_count": 2,
+    "available_count": 1,
+    "conflict_types": {
+      "Other": 1,
+      "Class": 1
+    },
+    "conflicts": [
+      {
+        "student": "ffsfsds",
+        "student_id": "sdffdsfsd",
+        "conflict_type": "Other",
+        "label": "zxczxzcx"
+      },
+      {
+        "student": "Glynn Smith",
+        "student_id": "1234561",
+        "conflict_type": "Class",
+        "label": "Sociology"
+      }
+    ]
+  }
+]
