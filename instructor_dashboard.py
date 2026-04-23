@@ -115,7 +115,6 @@ class InstructorDashboardWindow(tk.Toplevel):
                 borderwidth=1,
                 width=18,
                 bg="#e8e8e8",
-                font=(None, 10, "bold"),
             ).grid(row=0, column=col, sticky="nsew")
 
         time_slots = sorted({(result["start"], result["end"]) for result in self.results}, key=lambda item: (item[0], item[1]))

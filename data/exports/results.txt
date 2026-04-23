@@ -1,0 +1,236 @@
+1. Friday 10:00-10:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+2. Friday 12:00-12:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+3. Friday 1:00-1:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+4. Friday 2:00-3:20
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+5. Friday 3:30-4:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+6. Friday 5:00-6:20
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+7. Friday 9:00-9:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+8. Monday 11:00-11:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+9. Monday 3:30-4:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+10. Monday 5:00-6:20
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+11. Monday 8:00-8:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+12. Thursday 11:00-12:20
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+13. Thursday 12:30-1:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+14. Thursday 2:00-3:20
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+15. Thursday 5:00-6:20
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+16. Thursday 8:00-9:20
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+17. Thursday 9:30-10:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+18. Tuesday 11:00-12:20
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+19. Tuesday 12:30-1:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+20. Tuesday 2:00-3:20
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+21. Tuesday 3:30-4:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+22. Tuesday 5:00-6:20
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+23. Tuesday 9:30-10:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+24. Wednesday 10:00-10:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+25. Wednesday 11:00-11:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+26. Wednesday 1:00-1:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+27. Wednesday 8:00-8:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+28. Wednesday 9:00-9:50
+   Conflicts: 0
+   Available: 3
+   Priority: preferred
+
+29. Wednesday 2:00-3:20
+   Conflicts: 0
+   Available: 3
+   Priority: iffy
+
+30. Wednesday 3:30-4:50
+   Conflicts: 0
+   Available: 3
+   Priority: iffy
+
+31. Wednesday 5:00-6:20
+   Conflicts: 0
+   Available: 3
+   Priority: iffy
+
+32. Monday 6:30-9:30
+   Conflicts: 0
+   Available: 3
+   Priority: optional
+
+33. Thursday 6:30-9:30
+   Conflicts: 0
+   Available: 3
+   Priority: optional
+
+34. Tuesday 6:30-9:30
+   Conflicts: 0
+   Available: 3
+   Priority: optional
+
+35. Wednesday 6:30-9:30
+   Conflicts: 0
+   Available: 3
+   Priority: optional
+
+36. Friday 11:00-11:50
+   Conflicts: 1
+   Available: 2
+   Priority: preferred
+   - Gertrude Gunderson | Class | Publication
+
+37. Friday 8:00-8:50
+   Conflicts: 1
+   Available: 2
+   Priority: preferred
+   - Glynn Smith | Class | Printmaking
+
+38. Monday 10:00-10:50
+   Conflicts: 1
+   Available: 2
+   Priority: preferred
+   - Gertrude Gunderson | Class | Finance
+
+39. Monday 12:00-12:50
+   Conflicts: 1
+   Available: 2
+   Priority: preferred
+   - Gertrude Gunderson | Class | NSAC
+
+40. Monday 2:00-3:20
+   Conflicts: 1
+   Available: 2
+   Priority: preferred
+   - Gertrude Gunderson | Extracurricular | Robotics Club
+
+41. Monday 9:00-9:50
+   Conflicts: 1
+   Available: 2
+   Priority: preferred
+   - Glynn Smith | Spring Sport | Club
+
+42. Thursday 3:30-4:50
+   Conflicts: 1
+   Available: 2
+   Priority: preferred
+   - Gertrude Gunderson | Class | Algorithms
+
+43. Tuesday 8:00-9:20
+   Conflicts: 1
+   Available: 2
+   Priority: preferred
+   - Glynn Smith | Class | World History
+
+44. Wednesday 12:00-12:50
+   Conflicts: 1
+   Available: 2
+   Priority: preferred
+   - Glynn Smith | Extracurricular | Self Defense
+
+45. Monday 1:00-1:50
+   Conflicts: 2
+   Available: 1
+   Priority: preferred
+   - ffsfsds | Other | zxczxzcx
+   - Glynn Smith | Class | Sociology
+
