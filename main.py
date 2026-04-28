@@ -3,7 +3,6 @@ import tkinter as tk
 from instructor_dashboard import InstructorDashboardWindow
 from student_form import StudentFormWindow
 
-
 class LauncherApp(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -18,7 +17,7 @@ class LauncherApp(tk.Tk):
 
         tk.Label(
             frame,
-            text="Course Scheduling Analyzer",
+            text="RWU Course Scheduling Analyzer",
             font=("Arial", 14, "bold"),
         ).pack(pady=(0, 10))
 
