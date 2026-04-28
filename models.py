@@ -55,6 +55,7 @@ class StudentResponse:
 class CourseRequest:
     course_name: str = "Special Topics Course"
     include_evening: bool = False
+    include_wednesday_iffy: bool = True
 
     def to_dict(self) -> Dict:
         return asdict(self)
@@ -64,4 +65,5 @@ class CourseRequest:
         return cls(
             course_name=data.get("course_name", "Special Topics Course"),
             include_evening=bool(data.get("include_evening", False)),
+            include_wednesday_iffy=bool(data.get("include_wednesday_iffy", True)),
         )

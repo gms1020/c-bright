@@ -16,6 +16,7 @@ class InstructorSettingsWindow(tk.Toplevel):
 
         self.course_name_var = tk.StringVar(value=current.course_name)
         self.include_evening_var = tk.BooleanVar(value=current.include_evening)
+        self.include_wednesday_iffy_var = tk.BooleanVar(value=current.include_wednesday_iffy)
 
         self._build_ui()
 
@@ -32,6 +33,12 @@ class InstructorSettingsWindow(tk.Toplevel):
             variable=self.include_evening_var,
         ).grid(row=1, column=0, columnspan=2, sticky="w", pady=4)
 
+        tk.Checkbutton(
+            frame,
+            text="Include Wednesday afternoon iffy blocks",
+            variable=self.include_wednesday_iffy_var,
+        ).grid(row=2, column=0, columnspan=2, sticky="w", pady=4)
+
         tk.Button(frame, text="Save Settings", command=self.save).grid(row=3, column=0, columnspan=2, pady=16)
         frame.columnconfigure(1, weight=1)
 
@@ -39,6 +46,7 @@ class InstructorSettingsWindow(tk.Toplevel):
         request = CourseRequest(
             course_name=self.course_name_var.get().strip() or "Special Topics Course",
             include_evening=self.include_evening_var.get(),
+            include_wednesday_iffy=self.include_wednesday_iffy_var.get(),
         )
         save_course_request(request)
         messagebox.showinfo("Saved", "Instructor settings saved.")

@@ -42,9 +42,9 @@ BLOCKS: List[TimeBlock] = [
     TimeBlock("W4", "Wednesday", "11:00", "11:50", 4, "Wednesday 11:00-11:50"),
     TimeBlock("W5", "Wednesday", "12:00", "12:50", 5, "Wednesday 12:00-12:50"),
     TimeBlock("W6", "Wednesday", "13:00", "13:50", 6, "Wednesday 1:00-1:50"),
-    TimeBlock("W7", "Wednesday", "14:00", "15:20", 7, "Wednesday 2:00-3:20"),
-    TimeBlock("W8", "Wednesday", "15:30", "16:50", 8, "Wednesday 3:30-4:50"),
-    TimeBlock("W9", "Wednesday", "17:00", "18:20", 9, "Wednesday 5:00-6:20"),
+    TimeBlock("W7", "Wednesday", "14:00", "15:20", 7, "Wednesday 2:00-3:20", priority="iffy"),
+    TimeBlock("W8", "Wednesday", "15:30", "16:50", 8, "Wednesday 3:30-4:50", priority="iffy"),
+    TimeBlock("W9", "Wednesday", "17:00", "18:20", 9, "Wednesday 5:00-6:20", priority="iffy"),
 
     TimeBlock("R21", "Thursday", "08:00", "09:20", 21, "Thursday 8:00-9:20"),
     TimeBlock("R22", "Thursday", "09:30", "10:50", 22, "Thursday 9:30-10:50"),
@@ -72,6 +72,9 @@ BLOCKS: List[TimeBlock] = [
 
 
 BLOCKS_BY_CODE: Dict[str, TimeBlock] = {block.code: block for block in BLOCKS}
+BLOCKS_BY_DAY_AND_TIME: Dict[tuple[str, str, str], TimeBlock] = {
+    (block.day, block.start, block.end): block for block in BLOCKS
+}
 
 
 def get_block(code: str) -> Optional[TimeBlock]:
@@ -102,3 +105,49 @@ def get_block_options(include_evening: bool = True) -> List[str]:
         tag = f" ({', '.join(suffix)})" if suffix else ""
         options.append(f"{block.code} - {block.label}{tag}")
     return options
+
+
+def get_time_slot_options(include_evening: bool = True) -> List[str]:
+    seen = set()
+    options: List[str] = []
+
+    for block in BLOCKS:
+        if block.is_evening and not include_evening:
+            continue
+
+        slot = f"{block.start} - {block.end}"
+        if slot not in seen:
+            seen.add(slot)
+            options.append(slot)
+
+    return options
+
+
+def get_block_for_day_and_time(day: str, start: str, end: str) -> Optional[TimeBlock]:
+    return BLOCKS_BY_DAY_AND_TIME.get((day, start, end))
+
+
+def time_to_minutes(time_str: str) -> int:
+    hours, minutes = time_str.strip().split(":")
+    return int(hours) * 60 + int(minutes)
+
+
+def blocks_for_day_and_range(day: str, start: str, end: str, include_evening: bool = True) -> List[TimeBlock]:
+    start_min = time_to_minutes(start)
+    end_min = time_to_minutes(end)
+
+    matches: List[TimeBlock] = []
+
+    for block in BLOCKS:
+        if block.day != day:
+            continue
+        if block.is_evening and not include_evening:
+            continue
+
+        block_start = time_to_minutes(block.start)
+        block_end = time_to_minutes(block.end)
+
+        if start_min < block_end and end_min > block_start:
+            matches.append(block)
+
+    return matches

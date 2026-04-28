@@ -9,6 +9,7 @@ from time_blocks import get_block, get_candidate_blocks
 def analyze_schedules(students: List[StudentResponse], course_request: CourseRequest) -> List[Dict]:
     candidates = get_candidate_blocks(
         include_evening=course_request.include_evening,
+        include_wednesday_iffy=course_request.include_wednesday_iffy,
     )
     interested_students = [student for student in students if student.interested]
 

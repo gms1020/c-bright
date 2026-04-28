@@ -39,6 +39,7 @@ python main.py
 
 ## Notes
 
-- The program is built with Python and Tkinter.
+- No third-party APIs are used.
+- The program is built with Python and Tkinter only.
 - Wednesday afternoon blocks are marked as `iffy`.
 - Evening blocks are included only when the instructor enables them.
