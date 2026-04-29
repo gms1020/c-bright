@@ -107,6 +107,38 @@ def get_block_options(include_evening: bool = True) -> List[str]:
     return options
 
 
+def time_to_12_hour(time_str: str) -> str:
+    hours, minutes = time_str.strip().split(":")
+    hour = int(hours)
+    am_pm = "AM" if hour < 12 else "PM"
+    if hour == 0:
+        hour = 12
+    elif hour > 12:
+        hour -= 12
+    return f"{hour}:{minutes} {am_pm}"
+
+
+def parse_12_hour_time(time_str: str) -> str:
+    time_str = time_str.strip().upper()
+    if time_str.endswith(" AM") or time_str.endswith(" PM"):
+        time_part, am_pm = time_str.rsplit(" ", 1)
+    else:
+        raise ValueError("Time must include AM or PM")
+
+    hours, minutes = time_part.split(":")
+    hour = int(hours)
+    minute = int(minutes)
+
+    if am_pm == "AM":
+        if hour == 12:
+            hour = 0
+    elif am_pm == "PM":
+        if hour != 12:
+            hour += 12
+
+    return f"{hour:02d}:{minute:02d}"
+
+
 def get_time_slot_options(include_evening: bool = True) -> List[str]:
     seen = set()
     options: List[str] = []
@@ -115,7 +147,7 @@ def get_time_slot_options(include_evening: bool = True) -> List[str]:
         if block.is_evening and not include_evening:
             continue
 
-        slot = f"{block.start} - {block.end}"
+        slot = f"{time_to_12_hour(block.start)} - {time_to_12_hour(block.end)}"
         if slot not in seen:
             seen.add(slot)
             options.append(slot)

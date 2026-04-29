@@ -8,6 +8,8 @@ from time_blocks import (
     blocks_for_day_and_range,
     get_block_for_day_and_time,
     get_time_slot_options,
+    parse_12_hour_time,
+    time_to_12_hour,
 )
 
 
@@ -153,7 +155,7 @@ class StudentFormWindow(tk.Toplevel):
         help_text = (
             "Use Standard Time Slot for normal class times.\n"
             "Use Custom Time Range for labs, long classes, work shifts, or other unusual conflicts.\n"
-            "Custom times must use 24-hour format such as 13:00 or 16:15."
+            "Custom times can use 12-hour format like 1:00 PM or 24-hour format like 13:00."
         )
         tk.Label(help_frame, text=help_text, justify="left", anchor="w").pack(fill="x")
 
@@ -257,8 +259,18 @@ class StudentFormWindow(tk.Toplevel):
                 return
 
             try:
-                start_parts = custom_start.split(":")
-                end_parts = custom_end.split(":")
+                try:
+                    start_24 = parse_12_hour_time(custom_start)
+                except ValueError:
+                    start_24 = custom_start
+
+                try:
+                    end_24 = parse_12_hour_time(custom_end)
+                except ValueError:
+                    end_24 = custom_end
+
+                start_parts = start_24.split(":")
+                end_parts = end_24.split(":")
                 if len(start_parts) != 2 or len(end_parts) != 2:
                     raise ValueError
 
@@ -277,15 +289,15 @@ class StudentFormWindow(tk.Toplevel):
             except ValueError:
                 messagebox.showerror(
                     "Invalid custom time",
-                    "Use 24-hour format like 13:00 or 16:15, and make sure end time is later than start time."
+                    "Use 12-hour format like 1:00 PM or 24-hour format like 13:00, and make sure end time is later than start time."
                 )
                 return
 
             for day in selected_days:
                 matching_blocks = blocks_for_day_and_range(
                     day,
-                    custom_start,
-                    custom_end,
+                    start_24,
+                    end_24,
                     include_evening=self.include_evening
                 )
 
@@ -304,7 +316,7 @@ class StudentFormWindow(tk.Toplevel):
 
                     self.listbox.insert(
                         "end",
-                        f"{day} | {custom_start}-{custom_end} | {conflict.conflict_type} | {conflict.label} | {conflict.block_code}"
+                        f"{day} | {time_to_12_hour(start_24)}-{time_to_12_hour(end_24)} | {conflict.conflict_type} | {conflict.label} | {conflict.block_code}"
                     )
 
         if not added_conflicts:
