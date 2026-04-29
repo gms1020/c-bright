@@ -160,6 +160,12 @@ class StudentFormWindow(tk.Toplevel):
         list_frame = tk.LabelFrame(self, text="Current Conflicts", padx=12, pady=12)
         list_frame.pack(fill="both", expand=True, padx=12, pady=8)
 
+        content_frame = tk.Frame(list_frame)
+        content_frame.pack(fill="both", expand=True)
+
+        list_frame = tk.Frame(content_frame)
+        list_frame.pack(side="left", fill="both", expand=True)
+
         self.listbox = tk.Listbox(list_frame, width=120, height=16)
         self.listbox.pack(fill="both", expand=True, side="left")
 
@@ -167,23 +173,23 @@ class StudentFormWindow(tk.Toplevel):
         scrollbar.pack(fill="y", side="right")
         self.listbox.config(yscrollcommand=scrollbar.set)
 
-        bottom = tk.Frame(self, padx=12, pady=12, bg="#f5f5f5")
-        bottom.pack(fill="x")
+        side_buttons = tk.Frame(content_frame, padx=12, pady=12)
+        side_buttons.pack(side="right", fill="y")
 
         tk.Button(
-            bottom,
+            side_buttons,
             text="Remove Selected Conflict",
             command=self.remove_selected,
             width=24
-        ).pack(side="left", padx=4)
+        ).pack(side="top", pady=4)
 
         tk.Button(
-            bottom,
+            side_buttons,
             text="Submit Availability Form",
             command=self.save_submission,
             width=24,
             bg="#d9ead3"
-        ).pack(side="right", padx=4)
+        ).pack(side="top", pady=4)
 
     def clear_days(self):
         for var in self.day_vars.values():
